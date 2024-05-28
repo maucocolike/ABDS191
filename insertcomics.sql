@@ -1,0 +1,16 @@
+INSERT INTO Comic(nombre, anio, precio) VALUES
+('Spider-Man', 2018, 25.99),
+('Watchmen', 1986, 19.99),
+('Batman', 1986, 21.99),
+('Maus', 1986, 17.99),
+('Sandman', 1989, 23.99),
+('Saga', 2012, 29.99),
+('The Walking Dead', 2003, 14.99),
+('V de Vendetta', 1988, 18.99),
+('Preacher', 1995, 20.99),
+('Sin City', 1991, 16.99),
+('Akira', 1984, 22.99),
+('Hellboy', 1993, 19.99),
+('Y: El Último Hombre', 2002, 24.99),
+('The Umbrella Academy', 2007, 26.99),
+('Death Note', 2003, 15.99);

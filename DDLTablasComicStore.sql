@@ -1,3 +1,5 @@
+use ComicsStore
+
 create table Clientes (
   id_clientes bigint identity(9,2) Primary key,
   nombre varchar(25),
@@ -14,7 +16,10 @@ create table Compras (
 );
 
 create table Comic (
-  id_compra bigint identity(9,2) primary key,
+  id_comic bigint identity(9,2) primary key,
+  nombre varchar(25),
+  anio varchar(25),
+  precio float
 );
 
 
@@ -24,5 +29,14 @@ create table Comic_Compras (
   id_compra bigint,
   id_comic bigint,
   foreign key (id_compra) references Compras(id_compra),
-  foreign key (id_comic) references Comic(id_comics)
+  foreign key (id_comic) references Comic(id_comic)
 );
+
+
+create table Inventario (
+  id_inventario bigint identity(9,2) primary key,
+  id_comic int,
+  cantidad_disponible int,
+  disponibilidad varchar(25)
+);
+
